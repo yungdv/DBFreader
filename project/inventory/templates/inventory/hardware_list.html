@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hardware List</title>
+</head>
+<body>
+    <h1>Hardware List</h1>
+    <table border="1">
+        <tr>
+            <th>Model Name</th>
+            <th>Type Equipment</th>
+            <th>Inventory Number</th>
+            <th>Serial Number</th>
+        </tr>
+        {% for hw in hardware %}
+        <tr>
+            <td>{{ hw.model.name }}</td>
+            <td>{{ hw.model.type_equipment.name }}</td>
+            <td>{{ hw.inventory_number }}</td>
+            <td>{{ hw.serial_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

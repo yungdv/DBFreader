@@ -8,5 +8,5 @@ def print_dbf_structure(dbf_file):
     except Exception as e:
         print(f"Ошибка при чтении структуры файла {dbf_file}: {e}")
 
-dbf_file = 'dbfiles/USER.DBF'
+dbf_file = 'dbfiles/TYPEEQU.DBF'
 print_dbf_structure(dbf_file)

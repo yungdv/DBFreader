@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Типы оборудования</title>
+</head>
+<body>
+    <h1>Типы оборудования</h1>
+    <ul>
+        {% for type in types %}
+            <li>{{ type.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'equipment_type_create' %}">Добавить тип оборудования</a>
+</body>
+</html>

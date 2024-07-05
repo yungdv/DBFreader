@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Модели оборудования</title>
+</head>
+<body>
+    <h1>Модели оборудования</h1>
+    <ul>
+        {% for model in models %}
+            <li>{{ model.number }} - {{ model.equipment_type.name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'model_create' %}">Добавить модель оборудования</a>
+</body>
+</html>
